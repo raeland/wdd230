@@ -1,13 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=Sawarabi Mincho:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap");
-/*font-family: libre baskerville; and montserrat*/
-
-body {
-  height: 100vh;
+* {
   margin: 0;
-  font-family: "Quicksand";
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-weight: 200;
+  font-family: 'Sawarabi Mincho', serif;
+}
+
+/* mobile ****************************/
+header {
+  background-color: #cedbcd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: 'Quicksand', sans-serif;
+}
+
+nav {
+  background-color: #154e13;
+}
+
+nav ul {
+
+}
 header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
