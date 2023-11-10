@@ -1,0 +1,133 @@
+* {
+    max-width: 960px;
+    height: auto;
+    margin: 0 auto;
+    padding: 4px;
+    box-sizing: border-box;
+
+  }
+  
+  :root {
+    --primary-color: #1B7032;
+    --secondary-color: #3AF06A;
+    --accent1-color: #83F2A1;
+    --accent2-color: #3D704A;
+
+    --heading-font: 'Acme', sans-serif;
+    --paragraph-font: 'Inter', sans-serif;
+
+    --nav-background-color: #ffffff;
+    --nav-link-color: #3D704A;
+    --nav-hover-link-color: #83F2A1;
+    --nav-hover-background-color: #3AF06A;
+}   
+
+  body {
+    font-weight: 200;
+    font-family: 'Sawarabi Mincho', serif;
+  }
+  
+  /* mobile ****************************/
+  header {
+    background-color: #cedbcd;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 22pt;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  nav {
+    background-color: rgba(21,78,19, 0.5);
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+  }
+  
+  nav a :hover {
+    background-color: rgba(255,255,255, 0.5);
+  }
+  
+  nav .active {
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  header {
+    display: grid;
+    background: #326273;
+    color: white;
+    font-family: "Sawarabi Mincho";
+  }
+  
+  img {
+    width: 150px;
+    grid-column: 2 / 3;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none; /* Remove default list styles */
+    padding: 200px; /* Remove default padding */
+  }
+  
+  nav a {
+    display: block; /* list vertically */
+    text-decoration: none; /* Remove underlines from links */
+    color: #326273; /* Set link color */
+    font-weight: bold; /* Optionally, make the links bold */
+    text-align: center;
+    font-size: 14pt;
+    padding: 10px;
+  }
+  nav a:hover {
+    background: #326273;
+    color: white;
+  }
+  nav li {
+    display: block;
+  }
+
+  h2 {
+    color: #326273;
+    text-align: center;
+    padding-bottom: 1rem; /* Adjust the space between the text and the line as needed */
+    font-family: "Sawarabi Mincho";
+  }
+  
+  .sitecolors {
+    text-align: center;
+    border: 1px solid #326273;
+    color: #326273;
+    margin-bottom: 20px;
+  }
+
+  .activities li {
+    text-align: left;
+    list-style-type: decimal-leading-zero;
+    color: #326273;
+  }
+  .activities a {
+    color: #326273;
+  }
+  .activities a:hover {
+    color: #fcbf49;
+  }
+  /*change footer background and font color*/
+  footer {
+    background: #326273;
+    color: white;
+    grid-row: 3/4;
+    text-align: center;
+    padding: 15px;
+  }
+  
