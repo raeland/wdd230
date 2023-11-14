@@ -5,4 +5,4 @@ const list = document.querySelector('#list');
 button.addEventListener('click', function() { ... });
 button.addEventListener('click', () => { ... });
 
-if (input.value != ' ') { ... }
+if (input.value != ' ') { ... };
