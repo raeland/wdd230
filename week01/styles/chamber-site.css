@@ -34,8 +34,14 @@
   }
   
   h1 {
+    font-size: 30pt;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  h2 {
     font-size: 22pt;
     font-family: 'Quicksand', sans-serif;
+    color: #3A5B7E;
   }
   
   nav {
