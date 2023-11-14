@@ -47,8 +47,11 @@
 
   h3 {
     font-size: 16pt;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: #3A5B7E;
   }
-  
+
   hr {
     height: 3px;
     margin: 35px 0;
@@ -86,12 +89,6 @@
     font-family: "Sawarabi Mincho";
   }
   
-  img {
-    width: 150px;
-    grid-column: 2 / 3;
-    padding: 20px;
-  }
-  
   nav ul {
     list-style: none; /* Remove default list styles */
     padding: 200px; /* Remove default padding */
@@ -110,15 +107,9 @@
     background: #326273;
     color: white;
   }
+
   nav li {
     display: block;
-  }
-
-  h2 {
-    color: #3A5B7E;
-    text-align: center;
-    padding-bottom: 1rem; /* Adjust the space between the text and the line as needed */
-    font-family: "Sawarabi Mincho";
   }
   
   .sitecolors {

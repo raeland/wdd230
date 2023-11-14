@@ -1,11 +1,12 @@
-@media only screen and (min-width: 38rem) {
-    main {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-    main h2 {
-        grid-column: 1 / span 2;
-    }
-    
-    
-    }
+@media only screen and (min-width: 500px) {
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+main h2,h3, p {
+    grid-column: 1 / span 2;
+}
+hr, tr {grid-column: 1 / span 2;
+}
+
+}

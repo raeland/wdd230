@@ -53,6 +53,7 @@ header {
   background: #326273;
   color: white;
   font-family: "Sawarabi Mincho";
+  position: absolute;
 }
 
 img {
