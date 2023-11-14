@@ -8,18 +8,18 @@
   }
   
   :root {
-    --primary-color: #1B7032;
-    --secondary-color: #3AF06A;
-    --accent1-color: #83F2A1;
-    --accent2-color: #3D704A;
+    --primary-color: #3A5B7E;
+    --secondary-color: #E4F2F1;
+    --accent1-color: #66A393;
+    --accent2-color: #A4B2B6;
 
-    --heading-font: 'Acme', sans-serif;
-    --paragraph-font: 'Inter', sans-serif;
+    --heading-font: 'Sawarabi Mincho', serif;
+    --paragraph-font: 'Quicksand', sans-serif;
 
     --nav-background-color: #ffffff;
     --nav-link-color: #3D704A;
     --nav-hover-link-color: #83F2A1;
-    --nav-hover-background-color: #3AF06A;
+    --nav-hover-background-color: #1EAEA0;
 }   
 
   body {
@@ -98,7 +98,7 @@
   }
 
   h2 {
-    color: #326273;
+    color: #3A5B7E;
     text-align: center;
     padding-bottom: 1rem; /* Adjust the space between the text and the line as needed */
     font-family: "Sawarabi Mincho";
@@ -117,7 +117,7 @@
     color: #326273;
   }
   .activities a {
-    color: #326273;
+    color: #3A5B7E;
   }
   .activities a:hover {
     color: #fcbf49;
@@ -131,3 +131,80 @@
     padding: 15px;
   }
   
+  .sitecolors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .sitecolors th {
+    background-color: #ffffff;
+  }
+
+  .sitecolors td {
+    width: 25%;
+    height: 3rem;
+  }
+  
+  .primary {
+    background-color: #3A5B7E;
+  }
+  
+  .secondary {
+    background-color: #E4F2F1;
+  } 
+
+  .accent1 {
+    background-color: #66A393;
+  }
+  
+  .accent2 {
+    background-color: #A4B2B6;
+  }
+
+  .sitemap {
+    display: grid;
+    justify-content: center;
+  
+    grid-template-columns: repeat(6, 15%);
+    grid-template-rows: 3em 1.5em 1.5em 3em;
+    grid-template-areas: ". . home home . ."
+      ". . . top . ."
+      ". left left right right ."
+      "page2 page2 . . page3 page3";
+  }
+  .sitemap > div {
+    text-align: center;
+  }
+  .sm-home {
+    grid-area: home;
+    background-color: #ccc;
+    line-height: 3em;
+  }
+  .sm-page2 {
+    grid-area: page2;
+    background-color: #ccc;
+    line-height: 3em;
+  }
+  .sm-page3 {
+    grid-area: page3;
+    background-color: #ccc;
+    line-height: 3em;
+  }
+  .top {
+    grid-area: top;
+    border-left: 1px solid;
+  }
+  .left {
+    grid-area: left;
+    border-top: 1px solid;
+    border-left: 1px solid;
+  }
+  .right {
+    grid-area: right;
+    border-top: 1px solid;
+    border-right: 1px solid;
+  }
