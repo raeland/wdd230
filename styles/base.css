@@ -11,16 +11,23 @@ body {
 
 /* mobile ****************************/
 header {
-  background-color: #cedbcd;
+  background-color: #326273;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
+  color: white;
+  font-family: "Sawarabi Mincho";
+  position: absolute;
 }
+
 
 h1 {
   font-size: 2rem;
   font-family: 'Quicksand', sans-serif;
+  grid-column: 3 / 4;
+  display: flex;
+  align-items: center;
 }
 
 #menu {
@@ -62,25 +69,10 @@ nav .active {
   background-color: rgba(0,0,0,0.5);
 }
 
-header {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  background: #326273;
-  color: white;
-  font-family: "Sawarabi Mincho";
-  position: absolute;
-}
-
 img {
   width: 150px;
   grid-column: 2 / 3;
   padding: 20px;
-}
-
-h1 {
-  grid-column: 3 / 4;
-  display: flex;
-  align-items: center;
 }
 
 nav ul {
