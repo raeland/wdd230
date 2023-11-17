@@ -4,7 +4,6 @@
     margin: 0 auto;
     padding: 4px;
     box-sizing: border-box;
-
   }
   
   :root {
@@ -36,26 +35,33 @@
   
   h1 {
     font-size: 30pt;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Sawarabi Mincho', serif;
   }
 
   h2 {
     font-size: 22pt;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Sawarabi Mincho', serif;
     color: #3A5B7E;
   }
 
   h3 {
     font-size: 16pt;
     text-align: center;
+    font-family: 'Sawarabi Mincho', serif;
+    color: #A4B2B6;
+  }
+  
+  h4 {
+    font-size: 14pt;
+    text-align: center;
     font-family: 'Quicksand', sans-serif;
-    color: #3A5B7E;
+    color: #1EAEA0;
   }
 
   hr {
     height: 3px;
     margin: 35px 0;
-    background: #1EAEA0;
+    background: #E4F2F1;
   }
   
   nav {
@@ -111,17 +117,9 @@
   nav li {
     display: block;
   }
-  
-  .sitecolors {
-    text-align: center;
-    border: 1px solid #326273;
-    color: #326273;
-    margin-bottom: 20px;
-  }
 
   .activities li {
     text-align: left;
-    list-style-type: decimal-leading-zero;
     color: #326273;
   }
   .activities a {
@@ -146,15 +144,20 @@
     text-align: center;
     color: #ffffff;
     font-family: 'Quicksand', sans-serif;
+    border-spacing: .3 rem;
+    padding: 5px;
   }
 
   .sitecolors th {
     background-color: #ffffff;
+    align-content: center;
+    text-align: center;
   }
 
   .sitecolors td {
     width: 25%;
     height: 3rem;
+    vertical-align: middle;
   }
   
   .primary {
@@ -215,4 +218,8 @@
     grid-area: right;
     border-top: 1px solid;
     border-right: 1px solid;
+  }
+
+  #sawarbi {
+
   }
