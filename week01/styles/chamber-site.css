@@ -54,10 +54,17 @@
   h4 {
     font-size: 14pt;
     text-align: center;
-    font-family: 'Quicksand', sans-serif;
     color: #1EAEA0;
   }
 
+  p #sawarbi {
+    font-family: 'Quicksand', sans-serif;;
+  }
+
+  p #quicksand {
+    font-family: 'Sawarbi Mincho', serif;
+  }
+  
   hr {
     height: 3px;
     margin: 35px 0;
@@ -218,8 +225,4 @@
     grid-area: right;
     border-top: 1px solid;
     border-right: 1px solid;
-  }
-
-  #sawarbi {
-
   }
