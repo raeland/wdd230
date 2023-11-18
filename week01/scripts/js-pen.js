@@ -23,12 +23,14 @@ const options = {
 today1.innerHTML = new Date().toLocaleDateString("en-US", options);
 // Question #6 (change)
 today2.innerHTML = "<strong>Volume</strong>: " + volume + " liters";
-// Question #7
-
+let quantity = document.querySelector('#q').value;
 // Question #8
-
+document.querySelector('aside').innerHTML = 'Welcome to <em>my</em> neighborhood!';
 // Question #9
-
+document.querySelector('#temp').value = getCelsius(33);
 // Question #10
-
+const divs = document.querySelectorAll('div');
+document.querySelector('#divs').textContent = `${divs.length} divs in document.`;
 // Question #11
+let filterC = citynames.filter(city => city.charAt(0) === 'C');
+document.querySelector('#c-names').textContent = filterC;
