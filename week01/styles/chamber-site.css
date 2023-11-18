@@ -64,7 +64,7 @@
   p #quicksand {
     font-family: 'Sawarbi Mincho', serif;
   }
-  
+
   hr {
     height: 3px;
     margin: 35px 0;
@@ -151,7 +151,6 @@
     text-align: center;
     color: #ffffff;
     font-family: 'Quicksand', sans-serif;
-    border-spacing: .3 rem;
     padding: 5px;
   }
 
