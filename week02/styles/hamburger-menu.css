@@ -47,6 +47,14 @@ nav {
 	content: "x";
 }
 
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
 nav {
 	background-color: rgba(30,20,30,.1);
 }
@@ -56,6 +64,10 @@ nav {
 	list-style: none;
 	margin: 0 auto;
 	max-width: 760px;
+}
+
+.navigation li {
+	display: none;
 }
 
 .navigation li a {
@@ -82,14 +94,6 @@ nav {
 .navigation a:hover, navigation a:active {
 	color: white;
 	background-color: black;
-}
-
-.show li {
-	display: block;
-}
-
-#menu.show::before {
-	content: "X";
 }
 
 /* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.*/
