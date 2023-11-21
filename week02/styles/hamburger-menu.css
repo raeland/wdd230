@@ -28,30 +28,45 @@ nav {
 
 /* Mobile View ***************/
 #menu {
-	display: block;
 	font-size: 2rem;
 	font-weight:700;
 	text-decoration: none;
 	padding: .5rem .75rem;
 	background-color: #eee;
-	color: #000;
+	color: rgba(30,20,30,.1);
+	position: absolute;
+	top: 10px;
+	right: 10px;
 }
 
 #menu::before {
 	content: "≡";
 }
 
+#menu.open::before {
+	content: "x";
+}
+
 nav {
 	background-color: rgba(30,20,30,.1);
 }
 .navigation {
+	display: flex;
+	flex-direction: column;
 	list-style: none;
 	margin: 0 auto;
 	max-width: 760px;
 }
 
-.navigation li {
-	display: none;
+.navigation li a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 .navigation a {
 	display: block;
