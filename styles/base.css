@@ -41,7 +41,7 @@ h1 {
 content: "☰";
 }
 
-#menu.open::before {
+#menu.show::before {
   content: "X"
 }
 
@@ -93,13 +93,12 @@ nav a:hover {
   background: #326273;
   color: white;
 }
-nav li {
-  display: block;
+.navigation li {
+  display: none;
 }
 
-.open li {
+.show li {
   display: block;
-  width: 100%;
 } 
 
 h2 {
@@ -145,4 +144,20 @@ footer {
   grid-row: 3/4;
   text-align: center;
   padding: 15px;
+}
+
+@media only screen and (min-width: 40em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
 }
