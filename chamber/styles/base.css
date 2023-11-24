@@ -103,3 +103,18 @@ span p {font-size: 1.5rem}
 		margin: 1rem auto;
 	}
 }
+
+div .sidebar {
+    padding: 10px;
+}
+
+.sidebar-card {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,5,9,.2);
+    color: black;
+    background-color: ;
+    text-align: center;
+    margin-top: 10px;
+
+}

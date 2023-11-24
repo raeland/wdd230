@@ -124,7 +124,7 @@ main {
 .hero {
   margin: auto;
   position: relative;
-  border: 1px sold rgba(0,5,9,.2);
+  border: 1px solid rgba(0,5,9,.2);
   height: auto;
 }
 
