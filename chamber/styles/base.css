@@ -1,3 +1,105 @@
 span {background-color: red}
 
 span p {font-size: 1.5rem}
+/* Mobile View ***************/
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 10px;
+	background-color: black;
+	color: white;
+	border: solid 1px white;
+	border-radius: 4px;
+	right: 10px;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+#menu.open::before {
+	content: "x";
+}
+
+.navigation {
+	max-width: 760px;
+	list-style: none;
+	margin: 0 auto;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover, navigation a:active {
+	background-color: rgba(17, 164, 125, 0.232);
+	color: rgba(8, 8, 8, 1);
+	font-weight: 700;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
+}
+
+.active::before {
+	content: "📍 ";
+}
+
+.stuff {
+	margin: .5m;
+	border: 1px solid rgba(0,0,0,.1);
+	background-color: #bed;
+	max-width: 580px;
+	height: 100vh;
+}
+
+/* large view navigation ************************************/
+@media (min-width: 40em) {
+
+.navigation {
+	display: flex;
+	}
+
+.navigation li {
+	display: block;
+	flex: 1 1 100%;
+	}
+
+.navigation a {
+	text-align: center;
+}
+
+#menu {
+	display: none; /* hide hamburger button */
+	}
+	
+	.stuff {
+		margin: 1rem auto;
+	}
+}

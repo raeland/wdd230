@@ -13,9 +13,12 @@ body {
 	font-size: 2rem;
 	font-weight: 700;
 	text-decoration: none;
-	padding: .5rem .75rem;
-	background-color: #eee;
-	color: rgba(30,20,30,.1);
+	padding: 10px;
+	background-color: black;
+	color: white;
+	border: solid 1px white;
+	border-radius: 4px;
+	right: 10px;
 }
 
 #menu::before {
