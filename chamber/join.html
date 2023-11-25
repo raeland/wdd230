@@ -28,8 +28,8 @@
         </ul>
     </nav>
     <main>
-        <h1>Become A Member of Apopka's Chamber of Commerce</h1>
-        <form method="get" action="thanks.html">
+        <h1>Become a Member of Apopka Chamber of Commerce</h1>
+        <form method="get" action="thankyou.html">
             <fieldset>
                 <legend>Join Apopka's Chamber of Commerce</legend>
                 <label class="top">First Name* <input type="text" name="fname" required></label>
@@ -45,7 +45,8 @@
                 <label class="sbs"><input type="radio" name="membership" value="silver"> Silver Membership</label>
                 <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</label>
             </fieldset>
-                <label class="top">Business/Organization Description<input type="text" name="description"></label>
+                <label class="top" for="comments">Business/Organization Description</label>
+                <textarea id="comments" name="comments"></textarea>
                 <input type="submit" value="Apply For Membership" class="submitBtn">
             </fieldset>
         </form>
