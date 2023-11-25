@@ -145,8 +145,9 @@ main {
 }
 .activities li {
   text-align: left;
-  list-style-type: decimal-leading-zero;
-  color: #326273;
+/*  list-style-type: decimal-leading-zero;*/
+  text-decoration: none;
+  color: #A4B2B6;
 }
 .activities a {
   color: #326273;
