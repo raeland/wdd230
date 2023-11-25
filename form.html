@@ -33,25 +33,32 @@
     <main>
       <h1>Webform</h1>
       <form method="get" action="record.html">
-          <fieldset>
-              <legend>Join Apopka's Chamber of Commerce</legend>
-              <label class="top">First Name* <input type="text" name="fname" required></label>
-              <label class="top">Last Name* <input type="text" name="lname" required></label>
-              <label class="top">Business/Organization Name*<input type="text" name="business" required></label>
-              <label class="top">Job Title<input type="text" name="title"></label>
-              <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
-              <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-          <fieldset>
-              <legend>Membership Level</legend>
-              <label class="sbs"><input type="radio" name="membership" value="np"> NP Membership</label>
-              <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
-              <label class="sbs"><input type="radio" name="membership" value="silver"> Silver Membership</label>
-              <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</label>
-          </fieldset>
-              <label class="top" for="comments">Business/Organization Description</label>
-              <textarea id="comments" name="comments"></textarea>
-              <input type="submit" value="Apply For Membership" class="submitBtn">
-          </fieldset>
+        <fieldset>
+          <legend>User Information</legend>
+          <div id="formMessage"></div>
+          <label class="top">Username* <input type="text" name="username" id="username" required></label>
+          <label class="top">Password* <input type="password" name="password1" id="pwd1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></label>
+          <label class="top">Repeat Password* <input type="password" name="password2" id="pwd2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></label>
+          <label class="top">Email* <input type="email" name="email" placeholder="someone@byui.edu" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address." required></label>
+      </fieldset>
+      <fieldset>
+          <legend>Page Rating</legend>
+          <div id="rangeValue">1</div>
+          <label class="slider">Page Rating Slider<input type="range" name="rating" id="rating" min="1" max="10" value="1" step="1" list="rangeValues"></label>
+          <datalist id="rangeValues">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          </datalist>
+      </fieldset>
+      <input type="submit" value="Rate My Page"  class="submitBtn">
       </form>
     </main>
         <footer>        
