@@ -1,5 +1,4 @@
-footer {
-    background-color: #E4F2F1;
-    padding: .5rem 2%;
+header, footer {
+    background-color: rgba(252,191,73,.1);
     text-align: center;
 }
