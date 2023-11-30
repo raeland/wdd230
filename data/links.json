@@ -1,0 +1,81 @@
+{
+  "weeks": [
+    {
+      "week": "01",
+      "links": [
+        {
+          "url": "week01/holygrail.html",
+          "title": "HG Layout"
+        },
+        {
+          "url": "week01/media-query.html",
+          "title": "mQueries"
+        },
+        {
+          "url": "week01/js-pen.html",
+          "title": "JS Pen"
+        }
+      ]
+    },
+    {
+    "week": "02",
+    "links": [
+      {
+        "url": "week02/design.html",
+        "title": "Design"
+      },
+      {
+        "url": "week02/hamburger-menu.html",
+        "title": "Hamburger"
+      },
+      {
+        "url": "week02/bom.html",
+        "title": "BOM"
+      }
+    ]
+  },
+  {
+    "week": "03",
+    "links": [
+      {
+        "url": "",
+        "title": "WebP"
+      },
+      {
+        "url": "week03/responsive-images.html",
+        "title": "Responsive Image"
+      },
+      {
+        "url": "week03/lazyload.html",
+        "title": "lazyLoad"
+      },
+      {
+        "url": "week03/bom.html",
+        "title": "BOM Favorites"
+      }
+    ]
+  },
+  {
+    "week": "04",
+    "links": [
+      {
+        "url": "week04/tablebuild.html",
+        "title": "HTML Tables"
+      },
+      {
+        "url": "form.html",
+        "title": "HTML Forms"
+      }
+    ]
+  },
+  {
+    "week": "05",
+    "links": [
+      {
+        "url": "",
+        "title": ""
+      }
+    ]
+  }
+  ]
+}
