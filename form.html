@@ -6,7 +6,7 @@
     <title>Rachael S Varady - WDD230 - Web Frontend Development</title>
     <meta name="description" content="A webform to signup for updates to my course website">
     <title>WebForm</title>
-    <meta name="description" content="Use keywords to describe page">
+    <meta name="description" content="Team Built Form Page">
     <meta name="author" content="Rachael S Varady">
     <meta property="og:title" content="Rachael S Varady - WDD230 - Web Frontend Development">
     <meta property="og:type" content="website">
@@ -48,7 +48,7 @@
       <fieldset>
           <legend>Page Rating</legend>
           <div id="rangeValue">1</div>
-          <label class="slider">Page Rating Slider<input type="range" id="r" name="r" min="1" max="10" value="1" step="1" list="rangevalues">
+          <label class="slider">Page Rating Slider<input type="range" id="rating" name="rating" min="1" max="10" value="1" step="1" list="rangeValues">
           </label>
           <datalist id="rangeValues">
           <option value="1">1</option>
@@ -67,11 +67,12 @@
       </form>
     </main>
         <footer>        
-          <p>&copy; &bull; <span id="currentYear"></span> Rachael S Varady &bull; BYU-Idaho &bull; WDD 230-1B - Fall 2023</p>
+          <p>&copy; <span id="currentYear"></span> &bull; Rachael S Varady &bull; BYU-Idaho &bull; WDD 230-1B - Fall 2023</p>
           <p id="lastModified"></p>
       </footer>
       <script src="scripts/getDates.js"></script>
       <script src="scripts/menu.js"></script>
       <script src="scripts/form.js"></script>
+      <script src="scripts/range.js"></script>
 </body>
 </html>
