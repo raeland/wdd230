@@ -1,8 +1,5 @@
 @media only screen and (min-width: 32rem) {
     span {background-color: green}
-}
-
-@media only screen and (min-width: 32rem) {
     span {font-size: 2rem}
 }
 
