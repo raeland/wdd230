@@ -1,6 +1,6 @@
 @media only screen and (min-width: 32rem) {
-    span {background-color: green}
-    span {font-size: 2rem}
+
+    span {font-size: 1rem}
 }
 
 .city-grid {
