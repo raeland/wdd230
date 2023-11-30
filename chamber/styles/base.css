@@ -7,7 +7,8 @@ span p {font-size: 1.5rem}
 	font-size: 2rem;
 	font-weight: 700;
 	text-decoration: none;
-	padding: 10px;
+	padding: 0px;
+	position: absolute;
 	background-color: black;
 	color: white;
 	border: solid 1px white;
@@ -100,7 +101,7 @@ span p {font-size: 1.5rem}
 	}
 }
 
-div .sidebar {
+.sidebar {
     padding: 10px;
 }
 
@@ -112,8 +113,8 @@ div .sidebar {
     background-color: #bed;
     text-align: center;
     margin-top: 10px;
-
 }
+
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
