@@ -20,6 +20,9 @@ h1 {
 	font-size: 31px;
 }
 
+p {
+    font-size: .5rem;
+}
 .city-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
