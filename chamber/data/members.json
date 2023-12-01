@@ -1,0 +1,76 @@
+{
+    "members" : [
+      {
+        "name" : "",
+        "address" : "",
+        "phone" : "",
+        "website" : "",
+        "imageurl" : "",
+        "membership" : "Gold"
+      },
+      {
+        "name" : "Chick-fil-A Apopka - New Location Opened",
+        "address" : "2488 E Semoran Blvd, Apopka, FL 32703",
+        "phone" : "407-865-7071",
+        "website" : "https://www.chick-fil-a.com/locations/fl/apopka",
+        "imageurl" : "images/Chick-fil-A-Logo.png",
+        "membership" : "Gold"
+      },
+      {
+        "name" : "",
+        "address" : "",
+        "phone" : "4",
+        "website" : "",
+        "imageurl" : "",
+        "membership" : "Gold"
+      },
+      {
+        "name" : "",
+        "address" : "",
+        "phone" : "4",
+        "website" : "",
+        "imageurl" : "",
+        "membership" : "Silver"
+      },
+      {
+        "name" : "Downen Consulting",
+        "address" : "2120 Palm Vista Dr, Apopka, FL 32712",
+        "phone" : "407-739-6945",
+        "website" : "https://www.downenconsulting.com/contact/",
+        "image" : "images/downen-logo.jpeg",
+        "membership" : "Silver"
+      },
+      {
+        "name" : "Lareau and Lareau CPA's PA",
+        "address" : "1132 E Semoran Blvd, Apopka, FL 32703",
+        "phone" : "407-886-2597",
+        "website" : "https://www.lareaucpas.com/",
+        "imageurl" : "images/lareau-logo.png",
+        "membership" : "Bronze"
+      },
+      {
+        "name" : "The UPS Store - Shoppes At Wekiva Plaza",
+        "address" : "1631 Rock Springs Rd, Apopka, FL 32712",
+        "phone" : "407-814-8770",
+        "website" : "https://locations.theupsstore.com/fl/apopka/1631-rock-springs-rd?",
+        "imageurl" : "images/ups.svg",
+        "membership" : "Bronze"
+      },
+      {
+        "name" : "",
+        "address" : "",
+        "phone" : "",
+        "website" : "",
+        "imageurl" : "",
+        "membership" : "Bronze"
+      },
+      {
+        "name" : "",
+        "address" : "",
+        "phone" : "",
+        "website" : "",
+        "imageurl" : "",
+        "membership" : "NP"
+      }
+    ]
+}
