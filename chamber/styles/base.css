@@ -20,9 +20,6 @@ h1 {
 	font-size: 31px;
 }
 
-p {
-    font-size: .5rem;
-}
 .city-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -136,6 +133,11 @@ form legend {
     margin: 0 1rem;
     padding: 0 .5rem;
 }
+
+form p {
+    font-size: .5rem;
+}
+
 form label.top, form div {
     display: block;
     padding-top: 1rem;
@@ -175,6 +177,7 @@ form label.top input:required:valid {
     border-left: #66A393 solid 6px;
 }
 /*----------- FOOTER --------------*/
+
 footer {
     background-color: #E4F2F1;
     padding: .5rem 2%;
