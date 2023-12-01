@@ -64,7 +64,7 @@
     "links": [
       {
         "url": "https://codepen.io/raeland/pen/dyagZvv",
-        "title": "CSS Pseudo-Classes CodePen"
+        "title": "CSS Pseudo Classes CodePen"
       },
       {
         "url": "week04/images/combinators.png",
@@ -75,7 +75,7 @@
         "title": "HTML Table"
       },
       {
-        "url": "form.html",
+        "url": "form-start/index.html",
         "title": "HTML Forms"
       }
     ]
@@ -84,8 +84,8 @@
     "week": "05",
     "links": [
       {
-        "url": "",
-        "title": ""
+        "url": "https://codepen.io/raeland/pen/vYbVWad",
+        "title": "CSS Pseudo Elements CodePen"
       }
     ]
   }

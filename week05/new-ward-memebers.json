@@ -1,0 +1,33 @@
+{
+    "familyName" : "Varady",
+    "moveInDate" : "2010-01-01",
+    "familyCount" : 5,
+    "bishopVisit" : "no",
+    "familyMembers" : [
+      {
+        "name" : "James Bear",
+        "gender" : "Male",
+        "birthdate" : "01-24-1929"
+      },
+      {
+        "name" : "Rae Lane",
+        "gender" : "Female",
+        "birthdate" : "04-21-1939"
+      },
+      {
+        "name" : "Jacob Roo",
+        "gender" : "Male",
+        "birthdate" : "08-24-1967"
+      },
+      {
+        "name" : "Ken Lore",
+        "gender" : "Female",
+        "birthdate" : "10-24-1989"
+      },
+      {
+        "name" : "Athena Barbie",
+        "gender" : "Female",
+        "birthdate" : "05-24-1999"
+      }
+    ]
+  }
