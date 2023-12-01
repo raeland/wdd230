@@ -23,29 +23,29 @@ table {
 caption {
   padding: 10px;
   caption-side: bottom;
-	color: var(--back);
-	font-size: .85rem;
-}
-
-tr:first-child th, .highlight {
-	background-color: var(--back);
-	color: var(--forelight);
+  color: var(--back);
+  font-size: .85rem;
 }
 
 th, td {
 	padding: 7px 15px;
 	border: 1px solid var(--borderlight);
-}
-
-th {
-	background-color: var(--back2);
-	font-size: larger;
-}
-
-td {
 	text-align: center;
 }
 
-tbody tr:nth-child(odd) {
-	background-color: var(--zebra);
+tr:nth-child(even) {
+   background-color: rgba(5, 25, 255, 0.2);
+}
+tr:nth-child(odd) {
+   background-color: rgba(5, 25, 255, 0.5);
+}
+th {
+   background-color: rgba(0, 0, 0, 0.2);
+}
+
+footer {
+	margin-top: 1rem;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: rgba(252,191,73,.1);
+    text-align: center;
 }

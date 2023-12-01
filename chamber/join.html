@@ -50,13 +50,72 @@
                 <textarea id="comments" name="comments"></textarea>
                 <input type="submit" value="Apply For Membership" class="submitBtn">
             </fieldset>
+            <legend>Membership Level</legend>
+            <fieldset class="sbs-grid">
+                <label class="sbs"><input type="radio" name="level" value="np" onclick="showBenefits('np')"> NP Membership</label>
+                    <div class="collapsible-content" id="np-content">
+                        <div class="benefits-content">
+                            <h3>NP (Non Profit) Member Benefits:</h3>
+                            <p>No Fee</p><br>
+                            <p>An opportunity to develop your business, network with potential customers and business owners, and build credibility for your business. You will be able to take advantage of all the networking and connection opportunities the Chamber has to offer. Your business will be listed in the online Chamber Directory. Additionally, you will be welcomed into the Chamber through social media postings, and you will have the opportunity to hold a ribbon-cutting ceremony to officially kick off your membership.<br>
+                                <br>
+                                • Member pricing on events, products, and services; including Business Councils and the Ponce Inlet Beach Division<br>
+                                • Business listing in Chamber online directory<br>
+                                • Ribbon cutting for your business<br>
+                                • Official Chamber welcome promoting your business on social media</p>
+                        </div>
+                    </div>
+                <label class="sbs"><input type="radio" name="level" value="bronze"onclick="showBenefits('bronze')"> Bronze Membership</label>
+                    <div class="collapsible-content" id="bronze-content">
+                        <div class="benefits-content">
+                            <h3>Bronze Member Benefits:</h3>
+                            <p>$100.00 Anually</p><br>
+                            <p>The Bronze Membership helps you ascend to the next level of business. It not only includes the features and benefits of the NP Membership, but it admits your company to membership in the elite Economic Development Council (EDC). As an EDC member, you will receive periodic updates that will inform you of all of the development activities taking place in Port Orange. This membership is perfect for small businesses looking to grow and develop new clients and customers.<br>
+                                <br>
+                                • Membership in the Economic Development Council<br>
+                                • 2 category listings in Chamber online directory</p>
+                        </div>
+                    </div>
+                <label class="sbs"><input type="radio" name="level" value="silver" onclick="showBenefits('silver')"> Silver Membership</label>
+                    <div class="collapsible-content" id="silver-content">
+                        <div class="benefits-content">
+                            <h3>Silver Member Benefits:</h3>
+                            <p>$200.00 Anually</p><br>
+                            <p>Step up your community presence in Apopka while helping shape the city at City Council meetings. Silver Membership also includes an additional office to your membership at no additional cost.<br>
+                                <br>
+                                • $50 credit towards event exhibiting<br>
+                                • Membership for 1 additional branch or office<br>
+                                • 3 category listings in Chamber online directory<br>
+                                • Chamber member mailing labels</p>
+                        </div>
+                    </div>
+                <label class="sbs"><input type="radio" name="level" value="gold" onclick="showBenefits('gold')"> Gold Membership</label>
+                    <div class="collapsible-content" id="gold-content">
+                        <div class="benefits-content">
+                            <h3>Gold Membership Benefits:</h3>
+                            <p>$300.00 USD Annually</p><br>
+                            <P>The Gold Membership will offer you an ever-increasing business profile within the Chamber and beyond. With $100 available in sponsorship credit, you will now have the ability to sponsor multiple events if you so desire. Additionally, if you have multiple locations, this tier will cover two additional locations under your Gold Membership. This membership is an ideal fit for a business that is established and continuing to grow.<br>
+                                <br>
+                                • $100 credit towards event exhibiting<br>
+                                • Membership for 2 additional branch/ office locations<br>
+                                • 4 category listings in Chamber online directory</P>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <legend>Business Description</legend>
+            <fieldset>
+                <label class="descrip"><textarea name="description" id="description" placeholder="Please enter a description of your business or organization here."></textarea></label>
+            </fieldset>
+            <label class="timestamp"><input type="hidden" name="timestamp" id="timestamp"></label>
         </form>
     </main>
     <footer>
-        <p>&copy; &bull; <span id="currentYear"></span> Rachael S Varady &bull; BYU-Idaho &bull; CHAMBER PROJECT &bull; WDD 230-1B - Fall 2023</p>
+        <p>&copy; <span id="currentYear"></span> &bull; Rachael S Varady &bull; BYU-Idaho &bull; CHAMBER PROJECT &bull; WDD 230-1B - Fall 2023</p>
         <p id="lastModified"></p>
     </footer>
-    <script  src="scripts/hamburger-menu.js"></script>
+    <script src="scripts/hamburger-menu.js"></script>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/chamber.js"></script>
 </body>
 </html>

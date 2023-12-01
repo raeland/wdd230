@@ -7,6 +7,13 @@ body {
 	font-family: Roboto, sans-serif;
 }
 
+footer {
+	margin-top: 1rem;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: rgba(252,191,73,.1);
+    text-align: center;
+}
+
 /* Mobile View ***************/
 #menu {
 	display: block;
