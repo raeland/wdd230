@@ -5,7 +5,7 @@
 }
 
 body {
-  font-weight: 200;
+  font-weight: 600;
   font-family: 'Sawarabi Mincho', serif;
 }
 
@@ -18,7 +18,7 @@ header {
   padding: 2px;
   color: white;
   font-family: "Sawarabi Mincho";
-  position: absolute;
+  position: relative;
 }
 
 h1 {
@@ -47,6 +47,7 @@ nav {
   background-color: rgba(21,78,19,.2);
   text-align: center;
   min-height: 50px;
+  padding: 1rem;
 }
 
 nav ul {
@@ -62,17 +63,18 @@ nav a {
 }
 
 nav a :hover {
-  background-color: rgba(255,255,255, 0.5);
+  background-color: rgba(21,78,19, 0.5);
 }
 
 nav .active {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(21,78,190,0.2);
 }
 
 img {
   width: 150px;
   grid-column: 2 / 3;
   padding: 20px;
+  overflow-clip-margin: content-box;
 }
 
 nav ul {
@@ -178,4 +180,16 @@ footer {
 	#menu {
 		display: none;
 	}
+}
+
+.dark-mode {
+  background-color: rgba(21,78,19, 0.9);
+}
+#darkBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  width: 75px;
+  height: 75px;
 }
