@@ -8,3 +8,27 @@ async function getLinks() {
   }
   
   getLinks();
+
+  const displayLinks = (weeks) => {
+    weeks.forEach((week) => {
+        let line = document.createElement('li');
+        line.textContent = `Lesson ${week.lesson}:\xa0\xa0\xa0`;
+
+        week.links.forEach((link) => {
+            let anchor = document.createElement('a');
+
+            anchor.setAttribute('target', '_blank');
+            anchor.setAttribute('href', link.url);
+            anchor.textContent = link.title;
+
+            line.appendChild(anchor);
+            line.insertAdjacentHTML( 'beforeend', " | " );
+
+            
+        });
+        
+
+
+        cardList.appendChild(line);
+    });
+  }

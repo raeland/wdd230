@@ -191,6 +191,34 @@ main {
 .activities a:hover {
   color: #fcbf49;
 }
+
+.card-list {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0;
+}
+
+.card-list li {
+  font-size: 1.1em;
+  list-style-type: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.card p {
+  text-align: center;
+  font-size: 1.1em;
+  margin: 2rem auto 2rem auto;
+}
+
+.weather {
+  text-align: center;
+  font-size: 1.1em;
+  margin: 2rem auto 3rem auto;
+}
+
 /*change footer background and font color*/
 footer {
   background: #326273;
