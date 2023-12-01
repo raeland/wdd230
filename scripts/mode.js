@@ -5,4 +5,5 @@ myBtn.addEventListener('click', () => {
     myBtn.classList.toggle('dark');
     body.classList.toggle('dark-mode')
 
-})
+}
+)
