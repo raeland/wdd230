@@ -12,23 +12,20 @@ async function getLinks() {
   const displayLinks = (weeks) => {
     weeks.forEach((week) => {
         let line = document.createElement('li');
-        line.textContent = `Week ${weeks.week}:\xa0\xa0\xa0`;
+        line.textContent = `Week ${week}:\xa0\xa0\xa0`;
 
-        week.links.forEach((link) => {
+        weeks.week.forEach((links) => {
             let anchor = document.createElement('a');
 
             anchor.setAttribute('target', '_blank');
-            anchor.setAttribute('href', link.url);
-            anchor.textContent = link.title;
+            anchor.setAttribute('href', links.url);
+            anchor.textContent = links.title;
 
             line.appendChild(anchor);
             line.insertAdjacentHTML( 'beforeend', " | " );
-
             
         });
         
-
-
         cardList.appendChild(line);
     });
   }
