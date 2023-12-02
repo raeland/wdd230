@@ -1,3 +1,9 @@
+:root {
+  background-color: #326273;
+  background-color: #fff;
+  accent-color:   #A4B2B6;
+  font-family: 'Sawarabi Mincho', serif;
+}
 * {
   margin: 0;
   padding: 0;
