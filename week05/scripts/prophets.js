@@ -24,9 +24,9 @@ async function getProphetData() {
         birthPlace.textContent = `Place of Birth: ${prophet.birthplace}`;
         portrait.setAttribute('src', prophet.imageurl);
         portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
-        //portrait.setAttribute('loading', 'lazy');
-        //portrait.setAttribute('width', '340');
-        //portrait.setAttribute('height', '440');
+        portrait.setAttribute('loading', 'lazy');
+        portrait.setAttribute('width', '340');
+        portrait.setAttribute('height', '440');
     
         card.appendChild(fullName);
         card.appendChild(birthDate);
