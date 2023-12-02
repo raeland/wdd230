@@ -12,7 +12,7 @@ async function getLinks() {
   const displayLinks = (weeks) => {
     weeks.forEach((week) => {
         let line = document.createElement('li');
-        line.textContent = `Lesson ${week.lesson}:\xa0\xa0\xa0`;
+        line.textContent = `Week ${weeks.week}:\xa0\xa0\xa0`;
 
         week.links.forEach((link) => {
             let anchor = document.createElement('a');
