@@ -6,17 +6,14 @@
         {
           "title":"HG Layout",
           "url":"week01/holygrail.html"
-          
         },
         {
           "title":"mQueries",
           "url":"week01/media-query.html"
-          
         },
         {
           "title":"JS Pen",
           "url":"week01/js-pen.html"
-          
         }
       ]
     },
@@ -26,17 +23,14 @@
       {
         "title":"Design",
         "url":"week02/design.html"
-        
       },
       {
         "title":"Hamburger",
         "url":"week02/hamburger-menu.html"
-        
       },
       {
         "title":"BOM",
         "url":"week02/bom.html"
-        
       }
     ]
   },
@@ -46,22 +40,18 @@
       {
         "title":"WebP",
         "url":"week03/images/landscape.webp"
-
       },
       {
         "title":"Lazy Load",
-        "url":"week03/lazyload.html",
-        
+        "url":"week03/lazyload.html"
       },
       {
         "title":"Responsive Images - srcset",
         "url":"week03/responsive-images.html"
-        
       },
       {
         "title":"localStorage",
         "url":"week03/bom.html"
-        
       }
     ]
   },
@@ -69,41 +59,41 @@
     "week":"Week 04",
     "links": [
       {
-        "url": "https://codepen.io/raeland/pen/dyagZvv",
-        "title": "CSS Pseudo Classes CodePen"
+        "title":"CSS Pseudo Classes CodePen",
+        "url":"https://codepen.io/raeland/pen/dyagZvv"
       },
       {
-        "url": "week04/images/combinators.png",
-        "title": "Combinators w3schools Exercises"
+        "title":"Combinators w3schools Exercises",
+        "url":"week04/images/combinators.png"
       },
       {  
-        "url": "week04/tablebuild.html",
-        "title": "HTML Table"
+        "title":"HTML Table",
+        "url":"week04/tablebuild.html"
       },
       {
-        "url": "form-start/index.html",
-        "title": "HTML Forms"
+        "title":"HTML Forms",
+        "url":"form-start/index.html"
       }
     ]
   },
   {
-    "week": "05",
+    "week":"Week 05",
     "links": [
       {
-        "url": "https://codepen.io/raeland/pen/vYbVWad",
-        "title": "CSS Pseudo Elements CodePen"
+        "title":"CSS Pseudo Elements CodePen",
+        "url":"https://codepen.io/raeland/pen/vYbVWad"
       },
       {
-        "url": "week05/new-ward-members.json",
-        "title": "JSON Directory"
+        "title":"JSON Directory",
+        "url":"week05/new-ward-members.json"
       },
       {
-        "url": "week05/prophets.html",
-        "title": "Fetch API"
+        "title":"Fetch API",
+        "url": "week05/prophets.html"
       },
       {
-        "url": "week05/weather.html",
-        "title": "Weather API"
+        "title":"Weather API",
+        "url":"week05/weather.html"
       }
     ]
   }

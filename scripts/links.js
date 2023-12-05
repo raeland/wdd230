@@ -1,33 +1,52 @@
-const baseURL = "https://raeland.github.io/wdd230/";
-const linksURL = "https://raeland.github.io/wdd230/data/links.json";
+const baseURL = 'https://raeland.github.io/wdd230/';
+const linksURL = 'https://raeland.github.io/wdd230/data/links.json';
 
-const learningActivities = document.querySelector('#learningActivities');
+const learningActivities = document.querySelector('.cardlist');
 
 async function getActivityList() {
     const response = await fetch(linksURL);
-    const data = await response.json();
+    if(response.ok) {
+        const data = await response.json();
+        console.log(data);
+    } else {
+        throw Error(response.statusText);
+    }}
+/*
     //console.log(activitiesData);
     displayWeeks(data.weeks);
 };
 
+getLinks();
 
-const displayWeeks = (weeks) => {
+const displayLinks = (weeks) => {
     weeks.forEach((week) => {
-        const assignment = document.createElement('section');
-        assignment.setAttribute('class', 'assignments')
+        let card = document.querySelector('.cardlist');
+        let title = document.createElement('h3');
+        let learningActivities = document.createElement('div');
 
-        const weekTitle = document.createElement('h1');
+        title.textContent = 'Learning Activities';
+        card.appendChild(title);
+        card.appendChild(learningActivities);
 
-        const weekURL = document.createElement('a');
-        weekURL.textContent = '${wee.links[0].url'
-        weekURL.setAttribute('href', week.links[0].url);
+        weeks.forEach((week) => {
+            let weekElement = document.createElement('p');
 
-        weekTitle.appendChild(weekURL);
-        assignment.appendChild(weekTitle);
+            weekElement.textContent = `${weel.week}: `;
+            
+            week.links.forEach((link) => {
+                const linkElement = document.createElement('a');
+                linkElement.textContent = link.title;
+                linkElement.href = `${baseURL}${link.url}`;
 
-        cards.appendChild(assignment);
+                weekElement.appendChild(linkElement);
+
+                const seperator = document.createTextNode(` | `);
+                weekElement.appendChild(seperator);
+            })
+        })
+
+        learningActivities.appendChild(weekElement);
+
+        weekElement.removeChild(weekElement.lastChild);
     });
-};
-
-
-getActivityList();
+}
