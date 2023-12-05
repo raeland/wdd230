@@ -11,6 +11,8 @@ async function getActivityList() {
     } else {
         throw Error(response.statusText);
     }}
+
+    getActivityList();
 /*
     //console.log(activitiesData);
     displayWeeks(data.weeks);
