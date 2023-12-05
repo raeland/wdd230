@@ -24,7 +24,10 @@ function buildLearningCard(weekLinks){
 
                 week.innerHTML = `${weeks.week}`;
                 title.innerHTML = `${links.title}: `;
-                url.innerHTML = `${baseURL}${links.url}`;
+                url.innerHTML = `${linksURL}${links.url}`;
+
+                const seperator = document.createTextNode(` | `);
+                weekElement.appendChild(seperator);
 
                 card.append(h4);
                 card.appendChild(p);
@@ -32,30 +35,9 @@ function buildLearningCard(weekLinks){
 
                 cards.append(card);
 
-                const seperator = document.createTextNode(` | `);
-                weekElement.appendChild(seperator);
-            });
 
-                card.appendChild(learningActivities);
-
-                weeks.forEach((week) => {
-      
-                    week.links.forEach((link) => {
-                        const linkElement = document.createElement('a');
-                        linkElement.textContent = link.title;
-                        linkElement.href = `${baseURL}${link.url}`;
-        
-                        weekElement.appendChild(linkElement);
-        
-                        const seperator = document.createTextNode(` | `);
-                        weekElement.appendChild(seperator);
-                    })
-                })
-        
-                learningActivities.appendChild(weekElement);
-        
-                weekElement.removeChild(weekElement.lastChild);
-            });
+            })
+        }
     };
-}
-    getActivityList();
+
+getActivityList();
