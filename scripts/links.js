@@ -8,7 +8,7 @@ async function getActivityList() {
     if(response.ok) {
         const data = await response.json();
         //console.log(data);
-        buildLearningCard();
+        buildLearningCard(weekLinks);
     } else {
         throw Error(response.statusText);
     }
