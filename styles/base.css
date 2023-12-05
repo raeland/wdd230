@@ -182,6 +182,9 @@ main {
 
 .card-box {
   grid-column: 1 / 3;
+  text-align: left;
+  border: 1px solid #326273;
+  color: #326273;
 }
 
 .card {
@@ -229,6 +232,10 @@ main {
   margin: 2rem auto 3rem auto;
 }
 
+#map {
+  align-content: center;
+}
+
 /*change footer background and font color*/
 footer {
   background: #326273;
@@ -254,9 +261,6 @@ footer {
 	}
 }
 
-#darkBtn {
-
-}
 .dark-mode {
   background-color: #010101;
   color: #fff;
