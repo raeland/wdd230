@@ -7,34 +7,33 @@ async function getActivityList() {
     const response = await fetch(linksURL);
     if(response.ok) {
         const data = await response.json();
-        console.log(data);
+        //console.log(data);
+        buildLearningCard();
     } else {
         throw Error(response.statusText);
-    }}
+    }
+}
 
+function buildLearningCard(weekLinks){
+    console.log(weekLinks);
+}
     getActivityList();
 /*
     //console.log(activitiesData);
     displayWeeks(data.weeks);
 };
-
 getLinks();
-
-const displayLinks = (weeks) => {
+//const displayLinks = (weeks) => {
     weeks.forEach((week) => {
         let card = document.querySelector('.cardlist');
         let title = document.createElement('h3');
         let learningActivities = document.createElement('div');
-
         title.textContent = 'Learning Activities';
         card.appendChild(title);
         card.appendChild(learningActivities);
-
         weeks.forEach((week) => {
             let weekElement = document.createElement('p');
-
-            weekElement.textContent = `${weel.week}: `;
-            
+            weekElement.textContent = `${weel.week}: `;        
             week.links.forEach((link) => {
                 const linkElement = document.createElement('a');
                 linkElement.textContent = link.title;
@@ -51,4 +50,4 @@ const displayLinks = (weeks) => {
 
         weekElement.removeChild(weekElement.lastChild);
     });
-}
+}*/
