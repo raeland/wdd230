@@ -1,31 +1,33 @@
 const baseURL = "https://raeland.github.io/wdd230/";
 const linksURL = "https://raeland.github.io/wdd230/data/links.json";
 
-async function getLinks() {
+const learningActivities = document.querySelector('#learningActivities');
+
+async function getActivityList() {
     const response = await fetch(linksURL);
     const data = await response.json();
-    displayLinks(data);
-  }
-  
-  getLinks();
+    //console.log(activitiesData);
+    displayWeeks(data.weeks);
+};
 
-  const displayLinks = (weeks) => {
+
+const displayWeeks = (weeks) => {
     weeks.forEach((week) => {
-        let line = document.createElement('li');
-        line.textContent = `Week ${week}:\xa0\xa0\xa0`;
+        const assignment = document.createElement('section');
+        assignment.setAttribute('class', 'assignments')
 
-        weeks.week.forEach((links) => {
-            let anchor = document.createElement('a');
+        const weekTitle = document.createElement('h1');
 
-            anchor.setAttribute('target', '_blank');
-            anchor.setAttribute('href', links.url);
-            anchor.textContent = links.title;
+        const weekURL = document.createElement('a');
+        weekURL.textContent = '${wee.links[0].url'
+        weekURL.setAttribute('href', week.links[0].url);
 
-            line.appendChild(anchor);
-            line.insertAdjacentHTML( 'beforeend', " | " );
-            
-        });
-        
-        cardList.appendChild(line);
+        weekTitle.appendChild(weekURL);
+        assignment.appendChild(weekTitle);
+
+        cards.appendChild(assignment);
     });
-  }
+};
+
+
+getActivityList();
