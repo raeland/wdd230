@@ -23,7 +23,7 @@ function buildLearningCard(weekLinks){
                 let url = document.createElement('a');
 
                 week.innerHTML = `${weeks.week}`;
-                title.innerHTML = `${week.week}: `;
+                title.innerHTML = `${links.title}: `;
                 url.innerHTML = `${baseURL}${links.url}`;
 
                 card.append(h4);
@@ -39,8 +39,7 @@ function buildLearningCard(weekLinks){
                 card.appendChild(learningActivities);
 
                 weeks.forEach((week) => {
-                    let weekElement = document.createElement('p');
-                    weekElement.innerHTML = `${week.week}: `;        
+      
                     week.links.forEach((link) => {
                         const linkElement = document.createElement('a');
                         linkElement.textContent = link.title;
