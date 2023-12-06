@@ -29,6 +29,36 @@
         </ul>
     </nav>
     <main class="grid-home">
+        <div class="hero">
+            <div class="hero-title">Apopka Chamber of Commerce</div>           
+            <img src="images/downtown.jpeg" alt="Downtown Apopka Florida">
+        </div>
+        <div class="container">
+            <div class="weather">
+                <h2>Weather</h2>
+                <img id="weather-icon" src="scripts/weather.js" alt="#">
+                <span id="current-temp"></span><figcaption id="weather-description"></figcaption>
+            </div>
+        </div>
+            <div class="spotlights">
+                <h2 class="business-spotlight">Business Spotlight</h2>
+                <div class="business">
+                    <img class="spot" src="https://placeholder.jpeg/300x200.png" alt="place holder logo">
+                    <div class="business-info">
+                        <h3>Name of Business</h3>
+                        <p>Business Info</p>
+                    </div>
+                </div>
+                <div class="business">
+                    <img class="spot" src="https://placeholder.jpeg/300x200.png" alt="place holder logo">
+                    <div class="business-info">
+                        <h3>Name of Business</h3>
+                        <p>Business Info</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
         <section class="section">
             <h3>Join the Apopka Chamber of Commerce</h3>
             <p>Join here</p>
@@ -44,12 +74,7 @@
             <p>Weather: <span id="weather">Always Sunny</span></p>
             <p>Number of Visits:</p>
         </section>
-        <section class="card">
-            <h3>Company Spotlights</h3>
-            <p>one</p>
-            <p>two</p>
-            <p>three</p>
-        </section>
+
     </main>
     <footer>
         <p>&copy; <span id="currentYear"></span> &bull; Rachael S Varady &bull; BYU-Idaho &bull; CHAMBER PROJECT &bull; WDD 230-1B - Fall 2023</p>
@@ -58,5 +83,6 @@
     <script src="scripts/chamber.js"></script>
     <script src="scripts/hamburger-menu.js"></script>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
