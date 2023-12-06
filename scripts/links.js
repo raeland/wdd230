@@ -18,11 +18,11 @@ function buildLearningCard(weekLinks){
     const displayLinks = (weeks) => {
         weeks.forEach((week) => {
             let card = document.querySelector('div');
-            let week = document.createElement('h4');
+            let myweek = document.createElement('h4');
             let title = document.createElement('p');
             let url = document.createElement('a');
 
-            week.innerHTML = `${weeks.week}`;
+            myweek.innerHTML = `${weeks.week}`;
             title.innerHTML = `${links.title}: `;
             url.innerHTML = `${linksURL}${links.url}`;
 
