@@ -102,6 +102,23 @@ section	{
 	content: "X";
 }
 
+.spotlights {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    background-color: rgba(17, 164, 125, 0.232);
+    padding: 20px;
+}
+
+.business-spotlights {
+    width: 100%;
+    text-align: center;
+}
+/* styling for the Discover page */
+.business-info {
+    padding: 10px;
+    text-align: center;
+}
 /* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
 .open li {
 	display: block;

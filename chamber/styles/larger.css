@@ -32,7 +32,23 @@
     margin: 1rem auto;
 }
     
+.events {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    margin: 0;
+    max-width: 960px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    grid-column: 1 / span 3;
+    grid-row: 4;
+    
+}
+.events h2{
+    grid-column: 1/4;
 
+}
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
