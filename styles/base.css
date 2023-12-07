@@ -17,17 +17,6 @@ body {
   background-color: #fff;
 }
 
-#validate {
-	visibility: none;
-	margin: 10px;
-	padding: 0.5rem;
-	color: red;
-}
-
-#password:invalid {
-	background-color: #fff0f3;
-	animation: shaketext 500ms;
-}
 /* mobile ****************************/
 header {
   background-color: #326273;
