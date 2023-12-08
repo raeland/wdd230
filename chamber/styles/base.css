@@ -228,6 +228,10 @@ form label.top input:required:valid {
 footer {
     background-color: #E4F2F1;
     padding: .5rem 2%;
+    grid-row: 3/4;
+}
+
+footer p {
     text-align: center;
 }
 
