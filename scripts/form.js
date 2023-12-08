@@ -20,20 +20,21 @@ function checkSame() {
 }
 
 
-document.querySelector('form').addEventListener('submit', function(event))
+//document.querySelector('form').addEventListener('submit', function(event))
     const emailInput = document.getElementById('email');
     const emailPattern = "/^[a-zA-Z0-9._%+-]+@byui\.edu$/i";
     const errorMessage = document.querySelector('#emailvalidate')
 
 function event() {
-    if (emailInput.value != emailPattern) {
-        errorMessage.textContent = "Please enter a valid email address with the byui.edu domain";
+    if (emailInput.value = emailPattern) {
         message.style.visibility = "show";
         emailInput = "";
     }
         else {
+            (emailInput.value != emailPattern)
+            errorMessage.textContent = "Please enter a valid email address with the byui.edu domain";
             emailInput = '';
             emailInput.focus();
-            event.preventDefault();
+          //  event.preventDefault();
         }
 };
