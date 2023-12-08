@@ -197,7 +197,7 @@ form .sbs {
     background-color: white;
 }
 
-.benefits-content p {
+.benefits p {
     color: rgba(0, 0, 0, .1);
 }
 
@@ -236,4 +236,3 @@ footer {
   display: table;
   clear: both;
 }
-
