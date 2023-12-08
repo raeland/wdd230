@@ -7,7 +7,7 @@ document.querySelector("#lastModified").textContent = lastModified;
 
 
 const form = document.querySelector('form');
-form.addEventListener('submit', function () {
+form.addEventListener('submit', function() {
     const currentTimestamp = new Date().toISOString();
     document.getElementById('timestamp').value = currentTimestamp;
 });
