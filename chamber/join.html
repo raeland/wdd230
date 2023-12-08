@@ -42,27 +42,44 @@
             </fieldset>
             <fieldset>
                 <legend>Select Membership Level</legend>
-                <label class="sbs"><input type="radio" name="membership" value="np"> NP Membership</label>
-                <p>Free<br>
-                    • Member pricing on events, products, and services<br>
-                    • Business listing in Chamber online directory<br>
-                    • Ribbon cutting for your business<br>
-                    • Official Chamber welcome promoting your business on social media</p>
-                <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
-                <p>$100.00 Anually<br>
-                    • Membership in the Economic Development Council<br>
-                    • 2 listings in Chamber online directory</p>
-                <label class="sbs"><input type="radio" name="membership" value="silver"> Silver Membership</label>
-                <p>$200.00 Anually<br>
-                    • $50 credit towards event exhibiting<br>
-                    • Membership for 1 additional branch or office<br>
-                    • 3 listings in Chamber online directory<br>
-                    • Chamber member mailing labels</p>
-                <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</label>
-                <p>$300.00 USD Annually<br>
-                    • $100 credit towards event exhibiting<br>
-                    • Membership for 2 additional branch/ office locations<br>
-                    • 4 listings in Chamber online directory</P>
+                <fieldset class="member-grid">
+                    <label class="sbs"><input type="radio" name="membership" value="np" onclick="showBenefit('np')"> NP Membership</label>
+                        <div class="level-content" id="np-list">
+                            <div class="benefits">
+                                <p>Free<br>
+                                    • Member pricing on events, products, and services<br>
+                                    • Business listing in Chamber online directory<br>
+                                    • Ribbon cutting for your business<br>
+                                    • Official Chamber welcome promoting your business on social media</p>
+                            </div>
+                        </div>
+                    <label class="sbs"><input type="radio" name="membership" value="bronze" onclick="showBenefit('bronze')"> Bronze Membership</label>
+                    <div class="level-content" id="bronze-list">
+                        <div class="benefits">
+                                <p>$100.00 Anually<br>
+                                    • Membership in the Economic Development Council<br>
+                                    • 2 listings in Chamber online directory</p>                            
+                            </div>
+                        </div>
+                    <label class="sbs"><input type="radio" name="membership" value="silver" onclick="showBenefit('silver')"> Silver Membership</label>
+                        <div class="level-content" id="silver-list">
+                            <div class="benefits">
+                                <p>$200.00 Anually<br>
+                                    • $50 credit towards event exhibiting<br>
+                                    • Membership for 1 additional branch or office<br>
+                                    • 3 listings in Chamber online directory<br>
+                                    • Chamber member mailing labels</p>
+                            </div>
+                        </div>
+                    <label class="sbs"><input type="radio" name="membership" value="gold" onclick="showBenefit('gold')"> Gold Membership</label>
+                        <div class="level-content" id="gold-list">
+                            <div class="benefits">
+                                <p>$300.00 USD Annually<br>
+                                    • $100 credit towards event exhibiting<br>
+                                    • Membership for 2 additional branch/ office locations<br>
+                                    • 4 listings in Chamber online directory</p>
+                            </div>
+                        </div>
             </fieldset>
             <fieldset>
                 <legend>Business Description</legend>

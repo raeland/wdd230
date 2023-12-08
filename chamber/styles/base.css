@@ -172,11 +172,29 @@ form label.top input, form label.top select {
     max-width: 20rem;
     background-color: rgba(0, 0, 0, .1);
 }
-form label.sbs {
+form label.member-grid {
     display: block;
     padding: .75rem 0;
     color: #555;
 } 
+
+.level-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.benefits{
+    padding: 15px;
+    border: 1px solid rgb(139, 139, 139);
+    margin-top: 10px;
+    background-color: white;
+}
+
+.benefits-content p {
+    color: rgba(0, 0, 0, .1);
+}
+
 form input.submitBtn {
     border: none;
     background-color: #3A5B7E;
