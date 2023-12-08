@@ -25,6 +25,18 @@ const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
 
+
+function showBenefit(level) {
+    const collapsibleContent = document.getElementById(`${level}-content`);
+    const maxHeight = collapsibleContent.style.maxHeight;
+
+    if (!maxHeight || maxHeight === "0px") {
+        collapsibleContent.style.maxHeight = collapsibleContent.scrollHeight + "px";
+    } else {
+        collapsibleContent.style.maxHeight = "0";
+    }
+}
+
 // The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
 
 //gridbutton.addEventListener("click", showList) => {
