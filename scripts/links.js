@@ -3,18 +3,18 @@ const linksURL = 'https://raeland.github.io/wdd230/data/links.json';
 
 const learningActivities = document.querySelector('.card-box');
 
-async function getActivityList() {
+async function getLinks() {
     const response = await fetch(linksURL);
-    if(response.ok) {
+    //if(response.ok) {
         const data = await response.json();
         //console.log(data);
-        buildLearningCard(data);
-    } else {
-        throw Error(response.statusText);
-    }
+        displayLinks(data);
+    //} else {
+      //  throw Error(response.statusText);
+    //}
 }
 
-function buildLearningCard(weekLinks){
+function displayLinks(){
     const displayLinks = (weeks) => {
         weeks.forEach((week) => {
             let card = document.querySelector('div');
