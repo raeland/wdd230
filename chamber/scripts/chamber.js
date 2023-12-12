@@ -1,7 +1,3 @@
-const lastModifiedElement = document.getElementById('lastModified');
-const lastModifiedDate = new Date(document.lastModified);
-lastModifiedElement.textContent = 'Last modified: ' + lastModifiedDate.toDateString();
-
 document.addEventListener('DOMContentLoaded', function () {
     if (localStorage.getItem('lastVisit')) {
         const lastVisitDate = new Date(localStorage.getItem('lastVisit'));
@@ -9,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
 
         if (daysDifference === 0) {
-            document.getElementById('days').innerText = "Back so soon! Awesome!";
+            document.getElementById('days').innerText = ${days};
         } else {
             const message = (daysDifference === 1) ? "day" : "days";
             document.getElementById('days').innerText = `You last visited ${daysDifference} ${message} ago.`;
