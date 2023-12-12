@@ -9,17 +9,14 @@ body {
 	justify-content: center;
 }
 
-header {
-    margin: 1rem;
-    position: center;
+h1 {
     font-family: Roboto, helvetica, sans-serif;
 	margin: 0;
 	padding: 0.5rem;
-	font-size: larger;
+    font-size: 1.5rem;
 	font-weight: 700;
+    text-align: center;
 }
-
-h1,
 h2,
 h3,
 h4 {
@@ -79,8 +76,8 @@ li::before {
 }
 
 footer {
-	margin-top: 1rem;
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	background-color: rgba(252,191,73,.1);
     text-align: center;
 }
+
