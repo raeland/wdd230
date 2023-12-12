@@ -14,6 +14,14 @@ async function getLinks() {
     //}
 }
 
+getLinks();
+
+async function getLinks() {
+    const response = await fetch(linksURL);
+    const data = await response.json();
+    displayLinks(data);
+}
+
 function displayLinks(){
     const displayLinks = (weeks) => {
         weeks.forEach((week) => {
