@@ -59,7 +59,7 @@
     "week":"Week 04",
     "links": [
       {
-        "title":"CSS Pseudo Classes",
+        "title":"Pseudo Classes",
         "url":"week04/psuedo-class.html"
       },
       {
@@ -80,8 +80,8 @@
     "week":"Week 05",
     "links": [
       {
-        "title":"CSS Pseudo Elements CodePen",
-        "url":"https://codepen.io/raeland/pen/vYbVWad"
+        "title":"Pseudo Elements",
+        "url":"week05/psuedo-elements.html"
       },
       {
         "title":"JSON Directory",
