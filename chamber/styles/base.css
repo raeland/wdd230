@@ -153,9 +153,9 @@ section	{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: ;
+  background-color: rgba(17, 164, 125, 0.232);
   padding: 1rem 0;
-  box-shadow: ;
+  box-shadow: rgba(0,0,0,.1);
 }
 
 .cards section h2,
@@ -165,8 +165,8 @@ section	{
   text-align: center;
   font-size: 1.8em;
   font-weight: bold;
-  color: ;
-  background-color: ;
+  color: rgba(17, 164, 125, 0.5);
+  background-color: rgba(17, 164, 125, 0.232);
   margin: 0;
 }
 
@@ -175,7 +175,7 @@ section	{
 #spotlight-3 section p,
 .cards section p,
 .grid section p {
-    color: ;
+    color: rgba(17, 164, 125, 0.5);
     margin: 5px auto;
     padding: 0 0 0 8px;
 }
@@ -183,7 +183,7 @@ section	{
 .cards section img,
 .grid section img {
     margin: 1rem;
-    background-color: ;
+    background-color: rgba(17, 164, 125, 0.232);
 }
 
 #spotlight-1 section a,
@@ -192,7 +192,7 @@ section	{
 .cards section a,
 .grid section a {
   font-size: 1.1em;
-  color: ;
+  color: rgba(17, 164, 125, 0.5);
   padding: 12px 0;
   margin: 5px 0;
 }

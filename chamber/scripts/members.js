@@ -1,37 +1,38 @@
-const url = 'data/members.json';
-
+const baseURL = 'https://raeland.github.io/wdd230/';
+const membersURL = 'https://raeland.github.io/wdd230/chamber/data/members.json';
 const cards = document.querySelector('.cards');
 
-async function getMemberData() {
-    const response = await fetch(url);
+async function getMembers() {
+    const response = await fetch(membersURL);
     const data = await response.json();
     displayMembers(data.members);
 }
   
-getMemberData();
+getMembers();
 
 const displayMembers = (members) => {
   members.forEach((member) => {
-    const card = createCard(member);
-    cards.appendChild(card);
-  });
-}
-
-function createCard(member) {
-
     let card = document.createElement('section');
     let logo = document.createElement('img');
-    let orgName = document.createElement('h2');
+    let businessName = document.createElement('h2');
     let address = document.createElement('p')
     let phone = document.createElement('p')
     let website = document.createElement('a')
     let membership = document.createElement('p')
 
-    orgName.textContent = member.name;
-    address.textContent = member.address;
-    phone.textContent = member.phone;
-    website.textContent = member.website;
+    logo.setAttribute('src', member.image)
+    logo.setAttribute('alt', `company logo`)
+    logo.setAttribute('loading', 'lazy');
+    logo.setAttribute('width', '340');
+    logo.setAttribute('height', '440');
+
+    businessName.textContent = `${member.name}`;
+    address.textContent = `${member.address}<br>${member.city}`;
+    phone.textContent = `${member.phone}`;
+    website.textContent = `${member.website}`;
+    website.setAttribute('href', member.website);
     membership.textContent = `Membership Level:\xa0\xa0\xa0\xa0\xa0${member.membership}`;
+    
     website.setAttribute('target', '_blank');
     website.setAttribute('href', member.website);
     address.setAttribute('class', 'address');
@@ -42,32 +43,26 @@ function createCard(member) {
     logo.setAttribute('height', '200');
 
     card.appendChild(logo);
-    card.appendChild(orgName);
+    card.appendChild(businessName);
     card.appendChild(address);
     card.appendChild(phone);
     card.appendChild(website);
     card.appendChild(membership);
 
     return card;
+})
 }
 
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector(".cards");
 
-window.addEventListener("load", () => {
-  display.classList.add("grid");
-  display.classList.remove("list");
-});
-
 gridbutton.addEventListener("click", () => {
   display.classList.add("grid");
   display.classList.remove("list");
 });
 
-listbutton.addEventListener("click", showList);
-
-function showList() {
-  display.classList.add("list");
-  display.classList.remove("grid");
-}
+listbutton.addEventListener("click", () => {
+	display.classList.add("list");
+	display.classList.remove("grid");
+});
