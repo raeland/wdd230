@@ -177,7 +177,7 @@ button {
     padding: .5rem;
 }
 
-.directory .grid #cards {
+.directory.grid #cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 10px;
@@ -185,39 +185,39 @@ button {
     align-items: stretch;
 }
 
-.directory .list #cards {
+.directory.list #cards {
     margin: 15px;
 }
 
-.directory .list {
+.directory.list {
     display: flex;
     flex-direction: column;
 }
 
-.directory .list section {
+.directory.list section {
     box-shadow: none;
     margin: 0;  
     padding: .5rem;
 }
 
-.directory .list section > * {
+.directory.list section > * {
     margin: 0 1rem;
 }
 
-.directory .list section img {
+.directory.list section img {
     display: none; /* smaller viewports only */
 }
 
-.directory .list section h2 {
+.directory.list section h2 {
     font-size: 1rem;
     border-bottom: 0;
 }
 
-.directory .list section p {
+.directory.list section p {
     font-size: 1rem;
 }
 
-.directory .list section:nth-child(even) {
+.directory.list section:nth-child(even) {
     background-color: rgba(0, 0, 0, .1);
 }
 
