@@ -53,8 +53,8 @@ const displayMembers = (members) => {
 })
 }
 
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
+const gridbutton = document.querySelector("#grid-directory");
+const listbutton = document.querySelector("#list-directory");
 const display = document.querySelector(".directory");
 
 gridbutton.addEventListener("click", () => {
