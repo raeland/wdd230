@@ -1,6 +1,6 @@
 const baseURL = 'https://raeland.github.io/wdd230/';
 const membersURL = 'https://raeland.github.io/wdd230/chamber/data/members.json';
-const cards = document.querySelector('.cards');
+const cards = document.querySelector('#cards');
 
 async function getMembers() {
     const response = await fetch(membersURL);
@@ -55,7 +55,7 @@ const displayMembers = (members) => {
 
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
-const display = document.querySelector(".cards");
+const display = document.querySelector(".directory");
 
 gridbutton.addEventListener("click", () => {
   display.classList.add("grid");

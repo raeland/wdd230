@@ -146,66 +146,81 @@ section	{
 	height: auto;
 }
 
-.cards section,
-.grid section {
-  border: 1px solid ;
-  margin: 0 5px 10px 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgba(17, 164, 125, 0.232);
-  padding: 1rem 0;
-  box-shadow: rgba(0,0,0,.1);
+section {
+    margin: .25rem;
+    padding: .5rem;
+    border: 1px solid black;
+    box-shadow: 0 0 30px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.cards section h2,
-.grid section h2 {
-  line-height: 3rem;
-  height: 3rem;
-  text-align: center;
-  font-size: 1.8em;
-  font-weight: bold;
-  color: rgba(17, 164, 125, 0.5);
-  background-color: rgba(17, 164, 125, 0.232);
-  margin: 0;
+.directory h2 {
+    color: black;
 }
 
-#spotlight-1 section p,
-#spotlight-2 section p,
-#spotlight-3 section p,
-.cards section p,
-.grid section p {
-    color: rgba(17, 164, 125, 0.5);
-    margin: 5px auto;
-    padding: 0 0 0 8px;
+.directory img {
+    width: auto;
+    max-width: 250px;
+    max-height: 80px;
 }
 
-.cards section img,
-.grid section img {
-    margin: 1rem;
-    background-color: rgba(17, 164, 125, 0.232);
+.directory p {
+    margin: 0;
+    padding: 2px;
+    font-weight: 600;
+    color: black;
 }
 
-#spotlight-1 section a,
-#spotlight-2 section a,
-#spotlight-3 section a,
-.cards section a,
-.grid section a {
-  font-size: 1.1em;
-  color: rgba(17, 164, 125, 0.5);
-  padding: 12px 0;
-  margin: 5px 0;
+button {
+    padding: .5rem;
 }
 
-#spotlight-1 section p.address,
-#spotlight-2 section p.address,
-#spotlight-3 section p.address,
-.cards section p.address,
-.grid section p.address {
-  width: 210px;
-  text-align: center;
-  margin: 5px auto;
+.directory .grid #cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 10px;
+    padding: 3rem;
+    align-items: stretch;
 }
+
+.directory .list #cards {
+    margin: 15px;
+}
+
+.directory .list {
+    display: flex;
+    flex-direction: column;
+}
+
+.directory .list section {
+    box-shadow: none;
+    margin: 0;  
+    padding: .5rem;
+}
+
+.directory .list section > * {
+    margin: 0 1rem;
+}
+
+.directory .list section img {
+    display: none; /* smaller viewports only */
+}
+
+.directory .list section h2 {
+    font-size: 1rem;
+    border-bottom: 0;
+}
+
+.directory .list section p {
+    font-size: 1rem;
+}
+
+.directory .list section:nth-child(even) {
+    background-color: rgba(0, 0, 0, .1);
+}
+
 
 
 /* large view navigation ************************************/
