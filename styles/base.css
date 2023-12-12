@@ -167,10 +167,8 @@ main {
 }
 
 .card-box {
-  text-align: left;
   border: 1px solid #326273;
   color: #326273;
-  margin: 2rem;
 }
 
 .card-box h4 {
@@ -205,6 +203,11 @@ main {
   list-style-type: none;
   padding-top: 5rem;
   padding-bottom: 5px;
+}
+
+.card {
+  border: 1px solid #326273;
+  color: #326273;
 }
 
 .card p {
