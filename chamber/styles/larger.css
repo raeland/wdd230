@@ -112,14 +112,20 @@ body {
 
 
     /*----------- DIRECTORY PAGE :) :( --------------*/
+
+header,
+main,
+footer {
+  margin: 1rem;
+  position: relative;
+}
 #cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   align-items: center;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 3rem;
-  padding: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  background-color: rgba(135,206,235,.21);
+  border: 1px solid #bed;
+  padding: 2rem;
 }
       
 .menu {
@@ -136,9 +142,13 @@ body {
 }
       
 section {
+  margin: 0.25rem;
+  padding: 0.35rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0.5rem;
   background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
       
 .grid {
@@ -175,7 +185,7 @@ section {
   margin: 0.1rem;
 }
       
-.grid h3 {
+.grid h2 {
   color: black;
   font-size: 1rem;
   padding: 10px;
@@ -207,7 +217,7 @@ section {
   display: none; /* smaller viewports only */
 }
       
-.list section h3 {
+.list section h2 {
   font-size: 1rem;
   font-family: "Roboto", Helvetica, sans-serif;
 }
@@ -216,8 +226,14 @@ section {
   background-color: #bed;
 }
       
-section h3 {
+section h2 {
 font-size: 1.5rem;
+}
+
+p {
+  margin: 0;
+  padding: 2px;
+  font-weight: 400;
 }
       
 section p {
@@ -234,6 +250,10 @@ section a {
 }
       
 img {
-  height: 75px;
-  max-width: 100%;
-  }
+  width: auto;
+  max-width: 325px;
+  box-shadow: 1px solid #bbb;
+  height: 200px;
+  background-color: #eee;
+  border: 1px solid #bbb;
+}

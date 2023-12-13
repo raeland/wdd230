@@ -1,28 +1,33 @@
 const baseURL = 'https://raeland.github.io/wdd230/';
 const membersURL = 'https://raeland.github.io/wdd230/chamber/data/members.json';
+
 const cards = document.querySelector('#cards');
 
+//async function getMembers() {
+//    try{
+//        const response = await fetch(membersURL);
+//        if (response.ok) {
+//            const data = await response.json();
+//            displayMembers(data.members);
+//       } else {
+//            throw Error(await response.text());
+//        }
+//    } catch (error) {
+//        console.log(error);
+//    }
+//}
 async function getMembers() {
-    try{
-        const response = await fetch(membersURL);
-        if (response.ok) {
-            const data = await response.json();
-            displayMembers(data.members);
-        } else {
-            throw Error(await response.text());
-        }
-    } catch (error) {
-        console.log(error);
-    }
+    const response = await fetch(membersURL);
+    const data = await response.json();
+    console.log(data);
+    displayMembers(data.members);
 }
-
   
 getMembers();
 
 const displayMembers = (members) => {
   members.forEach((member) => {
     let card = document.createElement('section');
-
     let businessName = document.createElement('h2');
     let address = document.createElement('p');
     member.address.forEach((info) => {
@@ -36,7 +41,7 @@ const displayMembers = (members) => {
     let logo = document.createElement('img');
     member.logo.forEach((item) => {
         logo.setAttribute('src', item.img);
-        logo.setAttribute('alt', `company logo`);
+        logo.setAttribute('alt', `Logo of ${item.img}`);
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('width', '340');
         logo.setAttribute('height', '440');

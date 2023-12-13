@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
 
         if (daysDifference === 0) {
-            document.getElementById('days').innerText = ${days};
+            document.getElementById('days').innerText = `${days}`;
         } else {
             const message = (daysDifference === 1) ? "day" : "days";
             document.getElementById('days').innerText = `You last visited ${daysDifference} ${message} ago.`;
@@ -31,4 +31,4 @@ function showBenefit(level) {
     } else {
         collapsibleContent.style.maxHeight = "0";
     }
-}
+};
