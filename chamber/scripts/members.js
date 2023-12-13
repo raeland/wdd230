@@ -14,7 +14,7 @@ async function getMembers() {
     } catch (error) {
         console.log(error);
     }
-};
+}
 
   
 getMembers();
