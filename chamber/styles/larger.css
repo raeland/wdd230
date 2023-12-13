@@ -252,7 +252,7 @@ section a {
 img {
   width: auto;
   max-width: 325px;
-  box-shadow: 1px solid #bbb;
+  box-shadow: 0 0 20px #cccccc;
   height: 200px;
   background-color: #eee;
   border: 1px solid #bbb;
