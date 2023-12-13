@@ -34,7 +34,7 @@ const displayMembers = (members) => {
     let membership = document.createElement('p');
 
     let logo = document.createElement('img');
-    member.img.forEach((item) => {
+    member.logo.forEach((item) => {
         logo.setAttribute('src', item.img);
         logo.setAttribute('alt', `company logo`);
         logo.setAttribute('loading', 'lazy');
