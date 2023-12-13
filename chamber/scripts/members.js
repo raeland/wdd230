@@ -3,32 +3,46 @@ const membersURL = 'https://raeland.github.io/wdd230/chamber/data/members.json';
 const cards = document.querySelector('#cards');
 
 async function getMembers() {
-    const response = await fetch(membersURL);
-    const data = await response.json();
-    console.log(data);
-    displayMembers(data.members);
-}
+    try{
+        const response = await fetch(membersURL);
+        if (response.ok) {
+            const data = await response.json();
+            displayMembers(data.members);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+};
+
   
 getMembers();
 
 const displayMembers = (members) => {
   members.forEach((member) => {
     let card = document.createElement('section');
-    let logo = document.createElement('img');
+
     let businessName = document.createElement('h2');
-    let address = document.createElement('p')
-    let phone = document.createElement('p')
-    let website = document.createElement('a')
-    let membership = document.createElement('p')
+    let address = document.createElement('p');
+    member.address.forEach((info) => {
+        address.textContent = `${info.address}, ${info.street}, ${info.city}, ${info.state} ${info.zipcode}`;
+    });
 
-    logo.setAttribute('src', member.image)
-    logo.setAttribute('alt', `company logo`)
-    logo.setAttribute('loading', 'lazy');
-    logo.setAttribute('width', '340');
-    logo.setAttribute('height', '440');
+    let phone = document.createElement('p');
+    let website = document.createElement('a');
+    let membership = document.createElement('p');
 
+    let logo = document.createElement('img');
+    member.img.forEach((item) => {
+        logo.setAttribute('src', item.img);
+        logo.setAttribute('alt', `company logo`);
+        logo.setAttribute('loading', 'lazy');
+        logo.setAttribute('width', '340');
+        logo.setAttribute('height', '440');
+    });
+    
     businessName.textContent = `${member.name}`;
-    address.textContent = `${member.address}<br>${member.city}`;
     phone.textContent = `${member.phone}`;
     website.textContent = `${member.website}`;
     website.setAttribute('href', member.website);
@@ -37,11 +51,6 @@ const displayMembers = (members) => {
     website.setAttribute('target', '_blank');
     website.setAttribute('href', member.website);
     address.setAttribute('class', 'address');
-    logo.setAttribute('src', member.imageurl);
-    logo.setAttribute('alt', `Logo for ${member.name}`);
-    logo.setAttribute('loading', 'lazy');
-    logo.setAttribute('width', '200');
-    logo.setAttribute('height', '200');
 
     card.appendChild(logo);
     card.appendChild(businessName);
@@ -51,5 +60,5 @@ const displayMembers = (members) => {
     card.appendChild(membership);
 
     return card;
-})
-}
+    })
+};

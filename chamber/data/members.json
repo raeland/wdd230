@@ -12,7 +12,7 @@
         ],
         "phone" : "407-880-4778",
         "website":"https://www.homedepot.com/l/Apopka/FL/Apopka/32712/8926",
-        "imageurl":"https://www.homedepot.com/",
+        "img":"https://www.homedepot.com/",
         "membership":"Gold"
       },
       {
@@ -27,7 +27,7 @@
         ],
         "phone":"407-865-7071",
         "website":"https://www.chick-fil-a.com/locations/fl/apopka",
-        "image":"images/Chick-fil-A-Logo.png",
+        "img":"images/Chick-fil-A-Logo.png",
         "membership":"Gold"
       },
       {
@@ -42,7 +42,7 @@
         ],
         "phone":"407-774-8080",
         "website":"https://caffepositanos.com/lunch/",
-        "image":"images/positano.png",
+        "img":"images/positano.png",
         "membership":"Gold"
       },
       {
@@ -57,7 +57,7 @@
         ],
         "phone":"407-886-0204",
         "website":"https://www.allspc.com/#http://www.allspc.com#",
-        "image":"images/allspc-office.jpg",
+        "img":"images/allspc-office.jpg",
         "membership":"Silver"
       },
       {
@@ -72,7 +72,7 @@
         ],
         "phone":"407-739-6945",
         "website":"https://www.downenconsulting.com/contact/",
-        "image":"images/downen-logo.jpeg",
+        "img":"images/downen-logo.jpeg",
         "membership":"Silver"
       },
       {
@@ -87,7 +87,7 @@
         ],
         "phone":"407-886-2597",
         "website":"https://www.lareaucpas.com/",
-        "image":"images/lareau-logo.png",
+        "img":"images/lareau-logo.png",
         "membership":"Bronze"
       },
       {
@@ -102,7 +102,7 @@
         ],
         "phone":"407-814-8770",
         "website":"https://locations.theupsstore.com/fl/apopka/1631-rock-springs-rd?",
-        "image":"images/ups.svg",
+        "img":"images/ups.svg",
         "membership":"Bronze"
       },
       {
@@ -117,7 +117,7 @@
         ],
         "phone":"321-947-7053",
         "website":"https://www.facebook.com/PawsitiveSmiles/",
-        "imageurl":"https://www.facebook.com/photo/?fbid=259916463278878&set=a.182629251007600",
+        "img":"https://www.facebook.com/photo/?fbid=259916463278878&set=a.182629251007600",
         "membership":"Bronze"
       },
       {
@@ -132,7 +132,7 @@
         ],
         "phone":"407-886-0940",
         "website":"https://www.svdporlando.org/svdp-apopka.html",
-        "imageurl":"https://nebula.wsimg.com/b31e1e853f511cd0ceb2e35c59b357bd?AccessKeyId=C5C361B651A6A072E411&disposition=0&alloworigin=1",
+        "img":"https://nebula.wsimg.com/b31e1e853f511cd0ceb2e35c59b357bd?AccessKeyId=C5C361B651A6A072E411&disposition=0&alloworigin=1",
         "membership":"NP"
       }
     ]
